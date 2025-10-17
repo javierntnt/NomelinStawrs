@@ -44,7 +44,7 @@ const DetalleElemento = ({ filmId, onAddFav }) => {
       <p>Director: {film.properties.director || "Desconocido"}</p>
       <p>Productor: {film.properties.producer || "Desconocido"}</p>
       <p>Fecha de estreno: {film.properties.release_date || "Desconocida"}</p>
-      <button onClick={() => onAddFav(film)}>Añadir a Favoritos ⭐</button>
+      <button style={{marginBottom: "100px"}} onClick={() => onAddFav(film)}>Añadir a Favoritos ⭐</button>
     </div>
   );
 };
