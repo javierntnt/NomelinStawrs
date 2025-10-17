@@ -5,25 +5,29 @@ body {
 }
 
 nav {
-    position: fixed;
-  bottom: 20px; /* separa el nav del borde inferior */
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  z-index: 100;
+  background: #000;
+  color: #ffe81f;
+  border: 2px solid #ffe81f;
+  padding: 0.5rem 0.8rem;
+  font-family: inherit;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  box-shadow: 0 0 8px #ffe81f44;
+  flex-shrink: 0; /* evita que se encojan */
 }
 
 button {
   background: #000;
   color: #ffe81f;
   border: 2px solid #ffe81f;
-  margin-right: 0.5rem;
+  padding: 0.5rem 0.8rem;
   font-family: inherit;
   font-weight: bold;
-  letter-spacing: 1px;
+  border-radius: 10px;
+  font-size: 0.9rem;
   box-shadow: 0 0 8px #ffe81f44;
+  flex-shrink: 0; /* evita que se encojan */
 }
 
 button:hover {
@@ -52,4 +56,10 @@ li {
 li:hover {
   color: #fff;
   text-shadow: 0 0 8px #ffe81f;
+}
+@media (max-width: 480px) {
+  button {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+  }
 }
