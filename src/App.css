@@ -5,7 +5,14 @@ body {
 }
 
 nav {
-  margin-bottom: 2rem;
+    position: fixed;
+  bottom: 20px; /* separa el nav del borde inferior */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 100;
 }
 
 button {
